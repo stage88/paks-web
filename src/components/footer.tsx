@@ -11,7 +11,7 @@ const Footer = () => (
               <img src="img/footer_logo.png" alt="" />{' '}
             </a>
             <p>
-              So seeds seed green that winged cattle in Gahesd thing made fly you're no divided deep move lan Gathering thing us land years
+              So seedz seed green that winged cattle in Gahesd thing made fly you're no divided deep move lan Gathering thing us land years
               living on floor me the cavaty do buty fresh
             </p>
           </div>
