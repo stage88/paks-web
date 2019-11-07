@@ -40,7 +40,7 @@ const About = () => (
         <div className="container box_1170">
           <div className="row">
             <div className="col-md-12">
-              <img src="/paks-images/paks-building.png" alt="PAKS Building" title="PAKS Building" className="img-fluid" />
+              <img src="/paks-images/PAKS-Building.png" alt="PAKS Building" title="PAKS Building" className="img-fluid" />
             </div>
           </div>
         </div>

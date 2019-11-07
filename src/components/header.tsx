@@ -11,7 +11,7 @@ const Header: React.FC<Props> = ({ title }) => (
       <div className='row align-items-center'>
         <div className='col-lg-12'>
           <nav className='navbar navbar-expand-lg navbar-light'>
-            <Link className='navbar-brand' to='/'><img src='img/logo.png' title={title} alt={title} /></Link>
+            <Link className='navbar-brand' to='/'><img src='paks-images/PAKS-Logo.png' title={title} alt={title} /></Link>
             <button
               className='navbar-toggler'
               type='button'

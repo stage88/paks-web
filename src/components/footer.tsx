@@ -8,7 +8,7 @@ const Footer = () => (
           <div className="single-footer-widget footer_1">
             <a href="index.html">
               {' '}
-              <img src="img/footer_logo.png" alt="" />{' '}
+              <img src="paks-images/PAKS-Logo.png" alt="" />{' '}
             </a>
             <p>
               PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services.
