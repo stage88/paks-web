@@ -8,9 +8,10 @@ const Experience = () => (
           <div className="about_part_text">
             <h2>We Are Experienced in Construction</h2>
             <p>
-              Their whose made waters there our, air above first give dry fruit that second whose herb creeping it us light spirit appear
-              mans. So green abundantly She'd. Greater divide dry bearing years ourends herb upon which open lights had blessed replenish
-              Cattle give his. Abundantly over saying which beast dominion multiply behold to wateo.
+              Our company operates with an in house team of qualified tradesmen, supported by numerous contractors who are committed to our
+              clients and quality workmanship. We have extensive involvement with various Government & Statutory Authorities ensuring a
+              smooth completion of works undertaken. Working alongside with clients, PA & KS Contractors act as a one-stop shop delivering
+              safe compliant and cost effective services.
             </p>
             <div className="about_text_iner">
               <div className="about_text_counter">

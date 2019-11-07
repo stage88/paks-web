@@ -8,17 +8,43 @@ import SectionText from '../components/sectionText'
 const About = () => (
   <IndexLayout>
     <Page>
-      <BreadCrumb title='About' />
-      <SectionText title='About'>
-        Every avid independent filmmaker has <b>Bold</b> about making that <i>Italic</i> interest documentary, or short film to show off
-        their creative prowess. Many have great ideas and want to "wow" the<sup>Superscript</sup> scene, or video renters with their big
-        project. But once you have the<sub>Subscript</sub> "in the can" (no easy feat), how do you move from a <del>Strike</del> through of
-        master DVDs with the <u>"Underline"</u> marked hand-written title inside a secondhand CD case, to a pile of cardboard boxes full of
-        shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting on your doorstep? You need to create eye-popping artwork and
-        have your project replicated. Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner with is
-        certainly a helpful option to ensure a professional end result, but to help with your DVD replication project, here are 4 easy steps
-        to follow for good DVD replication results:
+      <BreadCrumb title="About" />
+      <SectionText title="About">
+        <p>
+          PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services. These
+          include minor/major refurbishments, maintenance, repairs and project management services for commercial and domestic buildings
+          throughout Canberra and surrounding areas.
+        </p>
+        <br />
+        <p>
+          Our company operates with an in house team of qualified tradesmen, supported by numerous contractors who are committed to our
+          clients and quality workmanship. We have extensive involvement with various Government & Statutory Authorities ensuring a smooth
+          completion of works undertaken. Working alongside with clients, PA & KS Contractors act as a one-stop shop delivering safe
+          compliant and cost effective services.
+        </p>
+        <br />
+        <p>
+          PA & KS Contractors have built strong ongoing relationships with Aged & Child Care Facilities, Retail Centres and Government &
+          Private Sector organisations.
+        </p>
+        <br />
+        <p>
+          PA & KS Contractors are conversant / compliant with all required WHS Procedures and offer a 24-hour 7-day reactive and emergency
+          service.
+        </p>
+        <br />
+        <p>The team hold up to date Police Checks, WWVP Cards (ACT & NSW) and White Cards.</p>
       </SectionText>
+
+      <div className="whole-wrap" style={{paddingBottom: '3em'}}>
+        <div className="container box_1170">
+          <div className="row">
+            <div className="col-md-12">
+              <img src="/paks-images/paks-building.png" alt="PAKS Building" title="PAKS Building" className="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
     </Page>
   </IndexLayout>
 )

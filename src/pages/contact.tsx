@@ -4,7 +4,7 @@ import Page from '../components/page'
 import IndexLayout from '../layouts'
 import BreadCrumb from '../components/breadCrumb'
 
-const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.2643632719164!2d149.16947591550473!3d-35.324256180278994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164c4a17dc00c3%3A0x54fe8f9df1f66638!2s1%20Gladstone%20St%2C%20Fyshwick%20ACT%202609!5e0!3m2!1sen!2sau!4v1573034992669!5m2!1sen!2sau`
+const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.263441238843!2d149.17542021524898!3d-35.32427908027913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164c348a768bed%3A0xa50677f4168ae5fa!2s1%2F75%20Wollongong%20St%2C%20Fyshwick%20ACT%202609!5e0!3m2!1sen!2sau!4v1573129540737!5m2!1sen!2sau`
 
 const ContactUs = () => {
   return (
@@ -64,8 +64,8 @@ const ContactUs = () => {
                     <i className="ti-home"></i>
                   </span>
                   <div className="media-body">
-                    <h3>Buttonwood, California.</h3>
-                    <p>Rosemead, CA 91770</p>
+                    <h3>Fyshwick, ACT.</h3>
+                    <p>Unit 1 75 Wollongong St Fyshwick ACT 2609</p>
                   </div>
                 </div>
                 <div className="media contact-info">
@@ -73,8 +73,8 @@ const ContactUs = () => {
                     <i className="ti-tablet"></i>
                   </span>
                   <div className="media-body">
-                    <h3>00 (440) 9865 562</h3>
-                    <p>Mon to Fri 9am to 6pm</p>
+                    <h3>Paul 0411 777 877</h3>
+                    <p>Mon to Fri 9am to 5pm</p>
                   </div>
                 </div>
                 <div className="media contact-info">
@@ -82,8 +82,8 @@ const ContactUs = () => {
                     <i className="ti-email"></i>
                   </span>
                   <div className="media-body">
-                    <h3>support@colorlib.com</h3>
-                    <p>Send us your query anytime!</p>
+                    <h3><a href="mailto:office@pakscontractors.com.au">office@pakscontractors.com.au</a></h3>
+                    <p>Send us your query anytime</p>
                   </div>
                 </div>
               </div>

@@ -11,36 +11,37 @@ const Footer = () => (
               <img src="img/footer_logo.png" alt="" />{' '}
             </a>
             <p>
-              So seedz seed green that winged cattle in Gahesd thing made fly you're no divided deep move lan Gathering thing us land years
-              living on floor me the cavaty do buty fresh
+              PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services.
+              These include minor/major refurbishments, maintenance, repairs and project management services for commercial and domestic
+              buildings throughout Canberra and surrounding areas.
             </p>
           </div>
         </div>
         <div className="col-xl-3 col-sm-6 col-md-4">
           <div className="single-footer-widget footer_2">
-            <h4>Best Services</h4>
+            <h4>Services</h4>
             <div className="contact_info">
               <ul>
                 <li>
-                  <a href="#">General Contracting</a>
+                  Major and minor refurbishments
                 </li>
                 <li>
-                  <a href="#">Mechanical Engineering</a>
+                  Building maintenance and repairs
                 </li>
                 <li>
-                  <a href="#">Civil Engineering</a>
+                  Commercial and domestic buildings
                 </li>
                 <li>
-                  <a href="#">Bridge Construction</a>
+                  Construction project management
                 </li>
                 <li>
-                  <a href="#">Electrical Engineering</a>
+                  Property related services
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="col-xl-3 col-sm-6 col-md-4">
+        {/* <div className="col-xl-3 col-sm-6 col-md-4">
           <div className="single-footer-widget footer_2">
             <h4>Our Gallery</h4>
             <div className="footer_img">
@@ -70,20 +71,20 @@ const Footer = () => (
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="col-xl-3 col-sm-6 col-md-4">
           <div className="single-footer-widget footer_2">
             <h4>Contact info</h4>
             <div className="contact_info">
-              <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p>
+              {/* <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p> */}
               <p>
-                <span> Address :</span> Hath of it fly signs bear be one blessed after{' '}
+                <span>Address:</span> <a href="https://goo.gl/maps/HuuQMptcZezrV1477" target="_blank">Unit 1 75 Wollongong St Fyshwick ACT 2609</a>
               </p>
               <p>
-                <span> Phone :</span> +2 36 265 (8060)
+                <span>Phone:</span> Paul 0411 777 877
               </p>
               <p>
-                <span> Email : </span>info@colorlib.com{' '}
+                <span>Email:</span> <a href="mailto:office@pakscontractors.com.au">office@pakscontractors.com.au</a>
               </p>
             </div>
           </div>
@@ -97,15 +98,16 @@ const Footer = () => (
             <div className="row">
               <div className="col-lg-12">
                 <p className="footer-text m-0">
-                  Copyright &copy; {new Date().getFullYear()} All rights reserved <br/>
-                  This template is made with{' '}
-                  <i className="ti-heart" aria-hidden="true"></i> by{' '}
+                  Copyright &copy; {new Date().getFullYear()} All rights reserved <br />
+                  This template is made with <i className="ti-heart" aria-hidden="true"></i> by{' '}
                   <a href="https://colorlib.com" target="_blank">
                     Colorlib
-                  </a> |
-                  Converted to GatsbyJS by <a href="https://github.com/stage88/paks-web" target="_blank">
+                  </a>{' '}
+                  | Converted to GatsbyJS by{' '}
+                  <a href="https://github.com/stage88/paks-web" target="_blank">
                     Sam Ilic
-                  </a><br/>
+                  </a>
+                  <br />
                 </p>
               </div>
             </div>
