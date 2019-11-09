@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="row justify-content-between">
         <div className="col-sm-6 col-md-4 col-xl-3">
           <div className="single-footer-widget footer_1">
-            <a href="index.html">
+            <a href="/">
               {' '}
               <img src="paks-images/PAKS-Logo.png" alt="" />{' '}
             </a>

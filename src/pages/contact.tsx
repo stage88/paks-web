@@ -64,7 +64,7 @@ const ContactUs = () => {
                     <i className="ti-home"></i>
                   </span>
                   <div className="media-body">
-                    <h3>Fyshwick, ACT.</h3>
+                    <h3>Fyshwick, ACT</h3>
                     <p>Unit 1 75 Wollongong St Fyshwick ACT 2609</p>
                   </div>
                 </div>
