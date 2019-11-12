@@ -46,6 +46,11 @@
 
 .form-contact {
 
+  .validation-error {
+    color: red;
+    padding: 3px;
+  }
+
   label {
     font-size: 14px;
   }
@@ -55,6 +60,11 @@
 
     .btn_1 {
       margin-bottom: -30px;
+
+      &:disabled {
+        cursor: not-allowed;
+        background-color: #8a8a8a;
+      }
     }
   }
 

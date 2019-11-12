@@ -1,15 +1,15 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import Page from '../components/page'
-import IndexLayout from '../layouts'
-import BreadCrumb from '../components/breadCrumb'
-import SectionText from '../components/sectionText'
+import Page from '../components/page';
+import IndexLayout from '../layouts';
+import BreadCrumb from '../components/breadCrumb';
+import SectionText from '../components/sectionText';
 
 const About = () => (
   <IndexLayout>
     <Page>
-      <BreadCrumb title="About" />
-      <SectionText title="About">
+      <BreadCrumb title='About' />
+      <SectionText title='About'>
         <p>
           PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services. These
           include minor/major refurbishments, maintenance, repairs and project management services for commercial and domestic buildings
@@ -36,17 +36,17 @@ const About = () => (
         <p>The team hold up to date Police Checks, WWVP Cards (ACT & NSW) and White Cards.</p>
       </SectionText>
 
-      <div className="whole-wrap" style={{paddingBottom: '3em'}}>
-        <div className="container box_1170">
-          <div className="row">
-            <div className="col-md-12">
-              <img src="/paks-images/PAKS-Building.png" alt="PAKS Building" title="PAKS Building" className="img-fluid" />
+      <div className='whole-wrap' style={{ paddingBottom: '3em' }}>
+        <div className='container box_1170'>
+          <div className='row'>
+            <div className='col-md-12'>
+              <img src='/paks-images/PAKS-Building.png' alt='PAKS Building' title='PAKS Building' className='img-fluid' />
             </div>
           </div>
         </div>
       </div>
     </Page>
   </IndexLayout>
-)
+);
 
-export default About
+export default About;

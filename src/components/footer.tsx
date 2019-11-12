@@ -1,14 +1,14 @@
-import * as React from 'react'
+import * as React from 'react';
 
 const Footer = () => (
-  <footer className="footer-area">
-    <div className="container">
-      <div className="row justify-content-between">
-        <div className="col-sm-6 col-md-4 col-xl-3">
-          <div className="single-footer-widget footer_1">
-            <a href="/">
+  <footer className='footer-area'>
+    <div className='container'>
+      <div className='row justify-content-between'>
+        <div className='col-sm-6 col-md-4 col-xl-3'>
+          <div className='single-footer-widget footer_1'>
+            <a href='/'>
               {' '}
-              <img src="paks-images/PAKS-Logo.png" alt="" />{' '}
+              <img src='paks-images/PAKS-Logo.png' alt='' />{' '}
             </a>
             <p>
               PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services.
@@ -17,26 +17,16 @@ const Footer = () => (
             </p>
           </div>
         </div>
-        <div className="col-xl-3 col-sm-6 col-md-4">
-          <div className="single-footer-widget footer_2">
+        <div className='col-xl-3 col-sm-6 col-md-4'>
+          <div className='single-footer-widget footer_2'>
             <h4>Services</h4>
-            <div className="contact_info">
+            <div className='contact_info'>
               <ul>
-                <li>
-                  Major and minor refurbishments
-                </li>
-                <li>
-                  Building maintenance and repairs
-                </li>
-                <li>
-                  Commercial and domestic buildings
-                </li>
-                <li>
-                  Construction project management
-                </li>
-                <li>
-                  Property related services
-                </li>
+                <li>Major and minor refurbishments</li>
+                <li>Building maintenance and repairs</li>
+                <li>Commercial and domestic buildings</li>
+                <li>Construction project management</li>
+                <li>Property related services</li>
               </ul>
             </div>
           </div>
@@ -72,39 +62,42 @@ const Footer = () => (
             </div>
           </div>
         </div> */}
-        <div className="col-xl-3 col-sm-6 col-md-4">
-          <div className="single-footer-widget footer_2">
+        <div className='col-xl-3 col-sm-6 col-md-4'>
+          <div className='single-footer-widget footer_2'>
             <h4>Contact info</h4>
-            <div className="contact_info">
+            <div className='contact_info'>
               {/* <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p> */}
               <p>
-                <span>Address:</span> <a href="https://goo.gl/maps/HuuQMptcZezrV1477" target="_blank">Unit 1 75 Wollongong St Fyshwick ACT 2609</a>
+                <span>Address:</span>{' '}
+                <a href='https://goo.gl/maps/HuuQMptcZezrV1477' target='_blank'>
+                  Unit 1 75 Wollongong St Fyshwick ACT 2609
+                </a>
               </p>
               <p>
                 <span>Phone:</span> Paul 0411 777 877
               </p>
               <p>
-                <span>Email:</span> <a href="mailto:office@pakscontractors.com.au">office@pakscontractors.com.au</a>
+                <span>Email:</span> <a href='mailto:office@pakscontractors.com.au'>office@pakscontractors.com.au</a>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-lg-12">
-          <div className="copyright_part_text text-center">
-            <div className="row">
-              <div className="col-lg-12">
-                <p className="footer-text m-0">
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='col-lg-12'>
+          <div className='copyright_part_text text-center'>
+            <div className='row'>
+              <div className='col-lg-12'>
+                <p className='footer-text m-0'>
                   Copyright &copy; {new Date().getFullYear()} All rights reserved <br />
-                  This template is made with <i className="ti-heart" aria-hidden="true"></i> by{' '}
-                  <a href="https://colorlib.com" target="_blank">
+                  This template is made with <i className='ti-heart' aria-hidden='true'></i> by{' '}
+                  <a href='https://colorlib.com' target='_blank'>
                     Colorlib
                   </a>{' '}
                   | Converted to GatsbyJS by{' '}
-                  <a href="https://github.com/stage88/paks-web" target="_blank">
+                  <a href='https://github.com/stage88/paks-web' target='_blank'>
                     Sam Ilic
                   </a>
                   <br />
@@ -116,6 +109,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

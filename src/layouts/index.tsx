@@ -1,18 +1,18 @@
-import * as React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import * as React from 'react';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 interface StaticQueryProps {
   site: {
     siteMetadata: {
-      title: string
-      description: string
-      keywords: string
-    }
-  }
+      title: string;
+      description: string;
+      keywords: string;
+    };
+  };
 }
 
 const query = graphql`
@@ -25,7 +25,7 @@ const query = graphql`
       }
     }
   }
-`
+`;
 
 const IndexLayout: React.FC = ({ children }) => (
   <StaticQuery
@@ -45,6 +45,6 @@ const IndexLayout: React.FC = ({ children }) => (
       </>
     )}
   />
-)
+);
 
-export default IndexLayout
+export default IndexLayout;

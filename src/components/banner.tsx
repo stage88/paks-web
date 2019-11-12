@@ -1,13 +1,13 @@
-import * as React from 'react'
-const style = {};// {padding: 0, background: 'rgba(255, 255, 255, 0.5)', border: '1px solid #fff', borderRadius: 3};
+import * as React from 'react';
+const style = {}; // {padding: 0, background: 'rgba(255, 255, 255, 0.5)', border: '1px solid #fff', borderRadius: 3};
 
 const Banner = () => (
-  <section className="banner_part">
-    <div className="container">
-      <div className="row align-items-center">
-        <div className="col-lg-6 col-xl-6">
-          <div className="banner_text">
-            <div className="banner_text_iner">
+  <section className='banner_part'>
+    <div className='container'>
+      <div className='row align-items-center'>
+        <div className='col-lg-6 col-xl-6'>
+          <div className='banner_text'>
+            <div className='banner_text_iner'>
               <h1>
                 Committed to <span>Superior</span> Quality and Results
               </h1>
@@ -31,6 +31,6 @@ const Banner = () => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Banner
+export default Banner;

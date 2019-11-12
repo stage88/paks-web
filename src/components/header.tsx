@@ -1,83 +1,82 @@
-import * as React from 'react'
-import { Link } from 'gatsby'
+import * as React from 'react';
+import { Link } from 'gatsby';
 
 interface Props {
-  title: string
+  title: string;
 }
 
 interface State {
-  mainMenuClass: string,
-  showMenu?: boolean,
+  mainMenuClass: string;
+  showMenu?: boolean;
 }
 
 class Header extends React.Component<Props, State> {
   state = {
     mainMenuClass: 'main_menu home_menu',
-    showMenu: undefined
-  }
+    showMenu: undefined,
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
     const top = window.scrollY + 1;
-    const mainMenuClass = top > 50
-      ? 'main_menu home_menu menu_fixed animated fadeInDown'
-      : 'main_menu home_menu';
+    const mainMenuClass = top > 50 ? 'main_menu home_menu menu_fixed animated fadeInDown' : 'main_menu home_menu';
 
     // console.log({top, mainMenuClass});
     if (this.state.mainMenuClass !== mainMenuClass) {
       this.setState({
-        mainMenuClass
+        mainMenuClass,
       });
     }
-  }
+  };
 
   render() {
     const title = this.props.title;
     let navbarClass = 'collapse navbar-collapse main-menu-item justify-content-end';
     if (this.state.showMenu != null) {
-      navbarClass = this.state.showMenu === true
-        ? 'collapse animated fadeIn show navbar-collapse main-menu-item justify-content-end'
-        : 'collapse animated fadeOut navbar-collapse main-menu-item justify-content-end';
+      navbarClass =
+        this.state.showMenu === true
+          ? 'collapse animated fadeIn show navbar-collapse main-menu-item justify-content-end'
+          : 'collapse animated fadeOut navbar-collapse main-menu-item justify-content-end';
     }
 
     return (
       <header className={this.state.mainMenuClass}>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-12">
-              <nav className="navbar navbar-expand-lg navbar-light">
-                <Link className="navbar-brand" to="/">
-                  <img src="paks-images/PAKS-Logo.png" title={title} alt={title} />
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-lg-12'>
+              <nav className='navbar navbar-expand-lg navbar-light'>
+                <Link className='navbar-brand' to='/'>
+                  <img src='paks-images/PAKS-Logo.png' title={title} alt={title} />
                 </Link>
                 <button
-                  className="navbar-toggler"
-                  type="button"
-                  onClick={() => this.setState({showMenu: this.state.showMenu === true ? false : true})}
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
+                  className='navbar-toggler'
+                  type='button'
+                  onClick={() => this.setState({ showMenu: this.state.showMenu === true ? false : true })}
+                  data-toggle='collapse'
+                  data-target='#navbarSupportedContent'
+                  aria-controls='navbarSupportedContent'
+                  aria-expanded='false'
+                  aria-label='Toggle navigation'
                 >
-                  <span className="ti-menu"></span>
+                  <span className='ti-menu'></span>
                 </button>
 
-                <div className={navbarClass} id="navbarSupportedContent">
-                  <ul className="navbar-nav align-items-center">
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/">
+                <div className={navbarClass} id='navbarSupportedContent'>
+                  <ul className='navbar-nav align-items-center'>
+                    <li className='nav-item'>
+                      <Link className='nav-link' to='/'>
                         Home
                       </Link>
                     </li>
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/about">
+                    <li className='nav-item'>
+                      <Link className='nav-link' to='/about'>
                         About
                       </Link>
                     </li>
@@ -111,8 +110,8 @@ class Header extends React.Component<Props, State> {
                     </a>
                   </div>
                 </li> */}
-                    <li className="nav-item">
-                      <Link className="nav-link" to="/contact">
+                    <li className='nav-item'>
+                      <Link className='nav-link' to='/contact'>
                         Contact us
                       </Link>
                     </li>
@@ -128,8 +127,8 @@ class Header extends React.Component<Props, State> {
           </div>
         </div>
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
