@@ -1,5 +1,5 @@
-import * as React from 'react'
+import * as React from 'react';
 
-const Page: React.FC = ({ children }) => <div>{children}</div>
+const Page: React.FC = ({ children }) => <div>{children}</div>;
 
-export default Page
+export default Page;

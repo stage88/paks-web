@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 /**
  * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
  *
@@ -7,18 +6,18 @@
 
 // You can delete this file if you're not using it
 
-import React from 'react'
+import React from 'react';
 
 export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   setHeadComponents([
-    <link key="1" rel="stylesheet" href="css/bootstrap.min.css" />,
-    <link key="2" rel="stylesheet" href="css/animate.css" />,
+    <link key='1' rel='stylesheet' href='css/bootstrap.min.css' />,
+    <link key='2' rel='stylesheet' href='css/animate.css' />,
     // <link key="3" rel="stylesheet" href="css/owl.carousel.min.css" />,
-    <link key="4" rel="stylesheet" href="css/themify-icons.css" />,
-    <link key="5" rel="stylesheet" href="css/flaticon.css" />,
+    <link key='4' rel='stylesheet' href='css/themify-icons.css' />,
+    <link key='5' rel='stylesheet' href='css/flaticon.css' />,
     // <link key="6" rel="stylesheet" href="css/magnific-popup.css" />,
     // <link key="7" rel="stylesheet" href="css/slick.css" />,
-  ])
+  ]);
   setPostBodyComponents([
     // <script key="1" type="text/javascript" src="js/jquery-1.12.1.min.js"></script>,
     // <script key="2" type="text/javascript" src="js/popper.min.js"></script>,
@@ -32,5 +31,5 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
     // <script key="10" type="text/javascript" src="js/jquery.counterup.min.js"></script>,
     // <script key="11" type="text/javascript" src="js/waypoints.min.js"></script>,
     // <script key="12" type="text/javascript" src="js/custom.js"></script>,
-  ])
-}
+  ]);
+};
