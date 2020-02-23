@@ -154,12 +154,9 @@ class ContactUs extends React.Component<{}, State> {
           <BreadCrumb title='Contact' />
           <section className='contact-section section_padding'>
             <div className='container'>
-              <div className='d-none d-sm-block mb-5 pb-4'>
-                <iframe src={mapUrl} width='100%' height='450' style={{ border: 0 }}></iframe>
-              </div>
               <div className='row'>
                 <div className='col-12'>
-                  <h2 className='contact-title'>Get in Touch</h2>
+                  <h3 className='text-heading'>Get in Touch</h3>
                 </div>
                 <div className='col-lg-8'>
                   <form action={formAction} method='POST' className='form-contact contact_form' id='contactForm'>
@@ -265,6 +262,9 @@ class ContactUs extends React.Component<{}, State> {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className='d-none d-sm-block mb-5 pb-4 section_padding'>
+                <iframe src={mapUrl} width='100%' height='450' style={{ border: 0 }}></iframe>
               </div>
             </div>
           </section>
