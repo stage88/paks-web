@@ -6,7 +6,7 @@
   background-image: url(../../static/paks-images/PAKS-Front.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right top;
+  background-position: center center;
 
   .overlay {
     position: absolute;
@@ -25,6 +25,7 @@
     background-image: url(../../static/paks-images/PAKS-Front-Small.jpeg);
     background-size: contain;
     background-color: #f7f7f7;
+    background-position: center top;
   }
 
   @media #{$medium_device} {
@@ -33,6 +34,7 @@
     // background-size: contain;
     background-image: url(../../static/paks-images/PAKS-Front-Small.jpeg);
     background-color: #f7f7f7;
+    background-position: center top;
   }
 
   .banner_text {
