@@ -1,7 +1,7 @@
 //--------- start footer Area -------------//
 .footer-area {
   background-color: #091b27;
-  padding: 100px 0 0;
+  padding: 24px 0 0;
 
   @media (max-width: 991px) {
     padding: 70px 0 0;
@@ -38,7 +38,7 @@
     }
 
     h4 {
-      margin-bottom: 33px;
+      margin-bottom: 16px;
       font-weight: 700;
       font-size: 24px;
       color: $white_color;
@@ -219,7 +219,8 @@
     }
 
     p {
-      margin-bottom: 10px;
+      margin-right: 12px;
+      display: inline;
 
       span {
         color: #83868c;
@@ -249,7 +250,7 @@
 
   .copyright_part_text {
     padding: 26px 0;
-    margin-top: 112px;
+    margin-top: 32px;
     background-color: #06151f;
 
     p {
@@ -257,7 +258,7 @@
     }
 
     @media #{$small_mobile} {
-      margin-top: 20px;
+      margin-top: 24px;
       text-align: center;
 
       p {
@@ -268,7 +269,7 @@
 
     @media #{$large_mobile} {
       text-align: center;
-      margin-top: 20px;
+      margin-top: 24px;
 
       p {
         font-size: 13px;

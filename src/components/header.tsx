@@ -75,11 +75,11 @@ class Header extends React.Component<Props, State> {
                         Home
                       </Link>
                     </li>
-                    <li className='nav-item'>
+                    {/* <li className='nav-item'>
                       <Link className='nav-link' to='/about'>
                         About
                       </Link>
-                    </li>
+                    </li> */}
                     {/* <li className='nav-item'>
                   <Link className='nav-link' to='/services'>Services</Link>
                 </li> */}

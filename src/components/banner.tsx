@@ -26,15 +26,6 @@ const Banner = () => (
                 <br />
                 Property project management.
               </p>
-              {/* <p>
-                  Our company operates with an in house team of qualified tradesmen, supported by numerous contractors who are committed to
-                  our clients and quality workmanship. We have extensive involvement with various Government & Statutory Authorities ensuring
-                  a smooth completion of works undertaken. Working alongside with clients, PA & KS Contractors act as a one-stop shop
-                  delivering safe compliant and cost effective services.
-                </p> */}
-              {/* <a href="#" className="btn_1">
-                  View project{' '}
-                </a> */}
             </div>
           </div>
         </div>

@@ -3,8 +3,8 @@ import * as React from 'react';
 const Footer = () => (
   <footer className='footer-area'>
     <div className='container'>
-      <div className='row justify-content-between'>
-        <div className='col-sm-6 col-md-4 col-xl-3'>
+      <div className='row justify-content-center'>
+        {/* <div className='col-sm-6 col-md-4 col-xl-3'>
           <div className='single-footer-widget footer_1'>
             <a href='/'>
               {' '}
@@ -30,7 +30,7 @@ const Footer = () => (
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <div className="col-xl-3 col-sm-6 col-md-4">
           <div className="single-footer-widget footer_2">
             <h4>Our Gallery</h4>
@@ -62,8 +62,8 @@ const Footer = () => (
             </div>
           </div>
         </div> */}
-        <div className='col-xl-3 col-sm-6 col-md-4'>
-          <div className='single-footer-widget footer_2'>
+        <div className='col-xl-12 col-sm-12 col-md-12'>
+          <div className='single-footer-widget footer_2 text-center'>
             <h4>Contact info</h4>
             <div className='contact_info'>
               {/* <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p> */}
