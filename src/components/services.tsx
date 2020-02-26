@@ -17,12 +17,12 @@ const Services: React.FC<Props> = ({ hideTitle }) => (
         </div>
       )}
       <div className='row'>
-        <div className='col-sm-6 col-xl-3'>
+        <div className='col-sm-6 col-xl-6'>
           <div className='single_feature'>
             <div className='single_service'>
               <span className='flaticon-ui'></span>
               <h4>Major or minor refurbishments</h4>
-              <p>We have built strong ongoing relationships with Aged Care & Child Care Facilities,
+              <p>We specialise in construction, commercial interiors and building refurbishment. We have built strong ongoing relationships with Aged Care & Child Care Facilities,
                 Retail Centres and Government & Private Sector organisations.</p>
               {/* <a href="#" className="btn_3">
                 read more
@@ -30,12 +30,14 @@ const Services: React.FC<Props> = ({ hideTitle }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm-6 col-xl-3'>
+        <div className='col-sm-6 col-xl-6'>
           <div className='single_feature'>
             <div className='single_service'>
               <span className='flaticon-ui'></span>
               <h4>Maintenance, repairs and project management</h4>
               <p>
+                We have extensive experience in commercial and domestic building refurbishment and construction projects to the highest
+                standard possible.
                 Our company operates with an in-house team of qualified tradesmen, supported by
                 numerous contractors who are committed to our clients and quality workmanship.
               </p>
@@ -45,7 +47,7 @@ const Services: React.FC<Props> = ({ hideTitle }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm-6 col-xl-3'>
+        <div className='col-sm-6 col-xl-6'>
           <div className='single_feature'>
             <div className='single_service single_service_2'>
               <span className='flaticon-ui'></span>
@@ -60,7 +62,7 @@ const Services: React.FC<Props> = ({ hideTitle }) => (
             </div>
           </div>
         </div>
-        <div className='col-sm-6 col-xl-3'>
+        <div className='col-sm-6 col-xl-6'>
           <div className='single_feature'>
             <div className='single_service single_service_2'>
               <span className='flaticon-ui'></span>

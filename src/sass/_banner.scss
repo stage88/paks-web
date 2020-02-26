@@ -6,7 +6,7 @@
   background-image: url(../../static/paks-images/PAKS-Front.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% calc(50% - 90px);
 
   .overlay {
     position: absolute;
@@ -50,6 +50,12 @@
         vertical-align: middle;
       }
 
+      @media #{$big_screen} {
+        padding-top: 6rem;
+      }
+      @media #{$extra_big_screen} {
+        padding-top: 6rem;
+      }
     }
 
     @media #{$tab} {

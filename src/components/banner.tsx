@@ -18,6 +18,10 @@ const Banner = () => (
                 Committed to <span>Superior</span> Quality and Results
               </h1>
               <p style={style}>
+                PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services.
+                These include minor/major refurbishments, maintenance, repairs and project management services for commercial and domestic
+                buildings throughout Canberra and surrounding areas.  <br /><br />
+
                 Building repairs and maintenance, both internal and external.
                 <br />
                 Property minor and major refurbishments for domestic and commercial projects.
