@@ -27,7 +27,7 @@ const query = graphql`
   }
 `;
 
-const IndexLayout: React.FC = ({ children }) => (
+const IndexLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <StaticQuery
     query={query}
     render={(data: StaticQueryProps) => (

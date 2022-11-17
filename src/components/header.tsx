@@ -53,7 +53,7 @@ class Header extends React.Component<Props, State> {
             <div className='col-lg-12'>
               <nav className='navbar navbar-expand-lg navbar-light'>
                 <Link className='navbar-brand' to='/'>
-                  <img src='paks-images/PAKS-Logo.png' title={title} alt={title} />
+                  <img src='/paks-images/PAKS-Logo.png' title={title} alt={title} />
                 </Link>
                 <button
                   className='navbar-toggler'
