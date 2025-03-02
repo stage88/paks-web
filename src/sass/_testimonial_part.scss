@@ -1,3 +1,5 @@
+@use "variables";
+
 /******************* testimonial part css88********************/
 .testimonial_part {
   overflow: hidden;
@@ -5,38 +7,38 @@
   .section_tittle {
     margin-bottom: 80px;
 
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       margin-bottom: 50px;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin-bottom: 50px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin-bottom: 50px;
     }
 
-    @media #{$medium_device} {}
+    @media #{variables.$medium_device} {}
   }
 
   .textimonial_iner {
     margin-left: 13%;
     overflow: hidden;
 
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       margin-left: 0;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin-left: 0;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin-left: 0;
     }
 
-    @media #{$medium_device} {
+    @media #{variables.$medium_device} {
       margin-left: 0;
     }
   }
@@ -44,19 +46,19 @@
   .testimonial_slider {
     margin: 30px;
 
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       margin: 0px;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin: 0px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin: 0px;
     }
 
-    @media #{$medium_device} {}
+    @media #{variables.$medium_device} {}
   }
 
   .testimonial_slider_text {
@@ -66,19 +68,19 @@
     position: relative;
     z-index: 1;
 
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       padding: 5px 0px;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       padding: 5px 20px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       padding: 5px 20px;
     }
 
-    @media #{$medium_device} {}
+    @media #{variables.$medium_device} {}
 
     &:after {
       position: absolute;
@@ -92,28 +94,28 @@
       background-repeat: no-repeat;
       z-index: -1;
 
-      @media #{$small_mobile} {
+      @media #{variables.$small_mobile} {
         width: 53px;
         height: 45px;
         right: 25%;
         top: 30px;
       }
 
-      @media #{$large_mobile} {
+      @media #{variables.$large_mobile} {
         width: 53px;
         height: 45px;
         right: 25%;
         top: 30px;
       }
 
-      @media #{$tab_device} {
+      @media #{variables.$tab_device} {
         width: 53px;
         height: 45px;
         right: 25%;
         top: 30px;
       }
 
-      @media #{$medium_device} {}
+      @media #{variables.$medium_device} {}
     }
 
   }
@@ -124,22 +126,22 @@
     margin-left: -26%;
     line-height: 0px;
 
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       margin-left: 0;
       padding-top: 20px;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin-left: 0;
       padding-top: 20px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin-left: 0;
       padding-top: 20px;
     }
 
-    @media #{$medium_device} {
+    @media #{variables.$medium_device} {
       margin-left: 0;
       padding-top: 20px;
     }
@@ -165,11 +167,11 @@
   }
 
   .testimonial_slider {
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin: 0px 20px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin: 0px 20px;
     }
 
@@ -189,7 +191,7 @@
 
   h5 {
     font-size: 14px;
-    font-family: $font_stack_1;
-    color: $font_8;
+    font-family: variables.$font_stack_1;
+    color: variables.$font_8;
   }
 }

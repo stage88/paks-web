@@ -1,3 +1,5 @@
+@use "variables";
+
 .single_blog_post {
   .desc {
     a {
@@ -9,7 +11,7 @@
   .single_blog {
     .single_appartment_content {
       padding: 38px 38px 23px;
-      border: 0px solid $border_color;
+      border: 0px solid variables.$border_color;
       box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
 
       p {
@@ -18,7 +20,7 @@
         margin-bottom: 20px;
 
         a {
-          color: $btn_bg;
+          color: variables.$btn_bg;
         }
       }
 
@@ -31,7 +33,7 @@
 
       h5 {
         font-size: 15px;
-        color: $font_4;
+        color: variables.$font_4;
         font-weight: 400;
       }
 
@@ -41,11 +43,11 @@
         li {
           display: inline;
           margin-right: 17px;
-          color: $font_5;
+          color: variables.$font_5;
 
           a {
             margin-right: 8px;
-            color: $font_5;
+            color: variables.$font_5;
           }
         }
       }
@@ -53,6 +55,6 @@
   }
 }
 
-@media #{$small_mobile} {}
+@media #{variables.$small_mobile} {}
 
-@media #{$large_mobile} {}
+@media #{variables.$large_mobile} {}

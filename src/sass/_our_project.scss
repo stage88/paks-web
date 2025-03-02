@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 /**************** our_offer css start ****************/
 
 .our_project {
@@ -5,7 +8,7 @@
     float: right;
     margin-top: 25px;
 
-    @media #{$tab} {
+    @media #{variables.$tab} {
       margin: 0 0 20px;
       float: left;
     }
@@ -20,36 +23,36 @@
         margin-left: 45px;
         cursor: pointer;
 
-        @media #{$tab} {
+        @media #{variables.$tab} {
           margin: 0 8px;
 
         }
 
         &:hover {
-          color: $btn_bg;
+          color: variables.$btn_bg;
         }
       }
     }
 
     .active {
-      color: $btn_bg;
+      color: variables.$btn_bg;
     }
   }
 
   .single_our_project {
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       margin-bottom: 20px;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin-bottom: 20px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin-bottom: 20px;
     }
 
-    @media #{$medium_device} {}
+    @media #{variables.$medium_device} {}
 
     &:hover {
       .single_offer {
@@ -92,7 +95,7 @@
         height: 100%;
         background-color: #001b5e;
         content: "";
-        @include transform_time(0.5s);
+        @include mixins.transform_time(0.5s);
         opacity: 0;
       }
 
@@ -112,7 +115,7 @@
         top: 40%;
         z-index: 100;
         opacity: 0;
-        @include transform_time(0.5s);
+        @include mixins.transform_time(0.5s);
 
         img {
           max-width: 39px;
@@ -121,16 +124,16 @@
         }
 
         h2 {
-          color: $white_color;
+          color: variables.$white_color;
           font-size: 30px;
         }
 
         p {
-          color: $white_color;
+          color: variables.$white_color;
           margin-bottom: 9px;
           margin-top: 13px;
           font-size: 15px;
-          color: $btn_bg;
+          color: variables.$btn_bg;
 
         }
       }

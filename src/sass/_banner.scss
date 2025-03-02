@@ -1,3 +1,5 @@
+@use "variables";
+
 /**************** banner part css start ****************/
 .banner_part {
   height: 800px;
@@ -19,7 +21,7 @@
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
   }
 
-  @media #{$tab} {
+  @media #{variables.$tab} {
     height: 550px;
     // background-image: none;
     background-image: url(../../static/paks-images/PAKS-Front-Small.jpeg);
@@ -28,7 +30,7 @@
     background-position: center top;
   }
 
-  @media #{$medium_device} {
+  @media #{variables.$medium_device} {
     height: 550px;
     // background-image: none;
     // background-size: contain;
@@ -46,25 +48,25 @@
       display: table-cell;
       vertical-align: middle;
 
-      @media #{$tab} {
+      @media #{variables.$tab} {
         vertical-align: middle;
       }
 
-      @media #{$big_screen} {
+      @media #{variables.$big_screen} {
         padding-top: 6rem;
       }
-      @media #{$extra_big_screen} {
+      @media #{variables.$extra_big_screen} {
         padding-top: 6rem;
       }
     }
 
-    @media #{$tab} {
+    @media #{variables.$tab} {
       text-align: center;
       padding-top: 0px;
       height: 650px;
     }
 
-    @media #{$medium_device} {
+    @media #{variables.$medium_device} {
       height: 650px;
     }
 
@@ -84,27 +86,27 @@
       line-height: 75px;
       color: white;
 
-      @media #{$tab} {
+      @media #{variables.$tab} {
         font-size: 30px;
         margin-bottom: 15px;
         line-height: 1.3;
       }
 
-      @media #{$medium_device} {
+      @media #{variables.$medium_device} {
         font-size: 40px;
         margin-bottom: 15px;
         line-height: 1.4;
       }
 
       span {
-        color: $btn_bg;
+        color: variables.$btn_bg;
       }
     }
 
     p {
       font-size: 15px;
       line-height: 1.8;
-      font-family: $font_stack_1;
+      font-family: variables.$font_stack_1;
       color: #f7f7f7;
     }
 

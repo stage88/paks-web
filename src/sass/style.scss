@@ -1,51 +1,35 @@
 // variable scss
-@import "variables";
+@use "variables";
 
 // mixin scss
-@import "mixins";
-@import "extends";
+@use "mixins";
+@use "extends";
 // default scss
-@import "common";
+@use "common";
 
 // button scss
-@import "button";
+@use "button";
 
-@import "blog";
-@import "single_blog";
+@use "blog";
+@use "single_blog";
 // body scss
-@import "menu";
-@import "banner";
-@import "our_service";
-@import "about_part";
-@import "our_project";
-@import "review";
-@import "member_counter";
-@import "project_details";
-@import "cource_details";
-@import "testimonial_part";
-@import "footer";
+@use "menu";
+@use "banner";
+@use "our_service";
+@use "about_part";
+@use "our_project";
+@use "review";
+@use "member_counter";
+@use "project_details";
+@use "cource_details";
+@use "testimonial_part";
+@use "footer";
 
-@import "elements";
-@import "blog_part";
-@import "copyright_part";
-@import "contact";
+@use "elements";
+@use "blog_part";
+@use "copyright_part";
+@use "contact";
 
 // breadcrumb scss
-@import "breadcrumb";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import "footer";
-
+@use "breadcrumb";
 

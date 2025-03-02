@@ -1,5 +1,8 @@
+@use "mixins";
+@use "variables";
+
 .breadcrumb_bg {
-  @include background("../../static/img/breadcrumb.png");
+  @include mixins.background("../../static/img/breadcrumb.png");
 }
 
 .breadcrumb {
@@ -21,37 +24,37 @@
 
   .breadcrumb_tittle {
     h2 {
-      color: $white_color;
+      color: variables.$white_color;
       font-size: 50px;
       font-weight: 600;
       margin-bottom: 10px;
       text-transform: capitalize;
 
-      @media #{$small_mobile} {
+      @media #{variables.$small_mobile} {
         font-size: 35px;
       }
 
-      @media #{$large_mobile} {
+      @media #{variables.$large_mobile} {
         font-size: 35px;
       }
 
-      @media #{$tab_device} {
+      @media #{variables.$tab_device} {
         font-size: 40px;
       }
 
-      @media #{$medium_device} {}
+      @media #{variables.$medium_device} {}
     }
   }
 
   .breadcrumb_content {
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       float: left;
       text-align: left !important;
     }
 
     p {
       font-size: 15px;
-      color: $white_color;
+      color: variables.$white_color;
     }
 
     span {

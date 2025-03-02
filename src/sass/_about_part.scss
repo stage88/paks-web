@@ -1,3 +1,5 @@
+@use "variables";
+
 /************Team css start***************/
 .about_part {
   position: relative;
@@ -7,28 +9,28 @@
   background-position: left;
   margin-top: 170px;
 
-  @media #{$tab} {
+  @media #{variables.$tab} {
     margin-top: 0;
     background-image: none;
     padding: 70px 0 0;
   }
 
-  @media #{$medium_device} {
+  @media #{variables.$medium_device} {
     margin-top: 80px;
     background-image: none;
   }
 
   .about_part_text {
-    @media #{$tab} {
+    @media #{variables.$tab} {
       padding-left: 0;
     }
 
-    @media #{$medium_device} {
+    @media #{variables.$medium_device} {
       padding-left: 0;
     }
 
     h5 {
-      font-family: $font_stack_1;
+      font-family: variables.$font_stack_1;
       color: #556172;
       font-size: 14px;
       font-weight: 500;
@@ -43,7 +45,7 @@
         height: 2px;
         width: 60px;
         content: "";
-        background-color: $btn_bg;
+        background-color: variables.$btn_bg;
       }
     }
 
@@ -54,14 +56,14 @@
       margin-bottom: 30px;
       position: relative;
 
-      @media #{$tab} {
+      @media #{variables.$tab} {
         font-size: 25px;
         margin-bottom: 10px;
         line-height: 35px;
         margin-top: 15px;
       }
 
-      @media #{$medium_device} {
+      @media #{variables.$medium_device} {
         font-size: 28px;
         margin-bottom: 20px;
         line-height: 40px;
@@ -72,19 +74,19 @@
       line-height: 1.929;
       margin-bottom: 7px;
 
-      @media #{$small_mobile} {
+      @media #{variables.$small_mobile} {
         margin-bottom: 10px;
       }
 
-      @media #{$large_mobile} {
+      @media #{variables.$large_mobile} {
         margin-bottom: 20px;
       }
 
-      @media #{$tab_device} {
+      @media #{variables.$tab_device} {
         margin-bottom: 20px;
       }
 
-      @media #{$medium_device} {}
+      @media #{variables.$medium_device} {}
     }
 
     ul {
@@ -93,19 +95,19 @@
       margin: 0;
       margin-top: 42px;
 
-      @media #{$small_mobile} {
+      @media #{variables.$small_mobile} {
         margin-bottom: 10px;
       }
 
-      @media #{$large_mobile} {
+      @media #{variables.$large_mobile} {
         margin-bottom: 20px;
       }
 
-      @media #{$tab_device} {
+      @media #{variables.$tab_device} {
         margin-bottom: 20px;
       }
 
-      @media #{$medium_device} {}
+      @media #{variables.$medium_device} {}
 
       li {
         display: inline-block;
@@ -113,16 +115,16 @@
         font-size: 14px;
         padding-left: 80px;
         padding-top: 30px;
-        color: $font_8;
+        color: variables.$font_8;
         position: relative;
 
-        @media #{$tab} {
+        @media #{variables.$tab} {
           padding-left: 41px;
           padding-top: 5px;
           margin-bottom: 0;
         }
 
-        @media #{$medium_device} {
+        @media #{variables.$medium_device} {
           padding-left: 41px;
           padding-top: 5px;
           margin-bottom: 0;
@@ -134,9 +136,9 @@
           position: absolute;
           left: 0;
           top: 20px;
-          color: $btn_bg;
+          color: variables.$btn_bg;
 
-          @media #{$tab} {
+          @media #{variables.$tab} {
             padding-bottom: 15px;
             position: absolute;
             left: 0;
@@ -144,7 +146,7 @@
             font-size: 35px;
           }
 
-          @media #{$medium_device} {
+          @media #{variables.$medium_device} {
             padding-bottom: 15px;
             position: absolute;
             left: 0;
@@ -166,7 +168,7 @@
   background-repeat: no-repeat;
   background-position: right;
 
-  @media #{$tab} {
+  @media #{variables.$tab} {
     background-image: none;
 
     .about_part_img {
@@ -174,7 +176,7 @@
     }
   }
 
-  @media #{$medium_device} {
+  @media #{variables.$medium_device} {
     background-image: none;
 
     .about_part_img {
@@ -197,13 +199,13 @@
         font-size: 150px;
         line-height: 120px;
         display: inline-block;
-        color: $btn_bg;
+        color: variables.$btn_bg;
         padding-right: 35px;
-        border-right: 1px solid $font_1;
+        border-right: 1px solid variables.$font_1;
         font-weight: 700;
         margin-bottom: 0;
 
-        @media #{$tab} {
+        @media #{variables.$tab} {
           font-size: 75px;
           line-height: 80px;
           margin-top: 0;
@@ -217,16 +219,16 @@
       margin-left: 35px;
 
       h3 {
-        color: $font_1;
+        color: variables.$font_1;
         display: inline-block;
 
-        @media #{$tab} {
+        @media #{variables.$tab} {
           font-size: 20px;
         }
       }
 
       span {
-        color: $heading_color;
+        color: variables.$heading_color;
         display: block;
       }
     }
@@ -237,11 +239,11 @@
   margin-top: 0;
   margin-bottom: 140px;
 
-  @media #{$tab} {
+  @media #{variables.$tab} {
     margin-bottom: 70px;
   }
 
-  @media #{$medium_device} {
+  @media #{variables.$medium_device} {
     margin-bottom: 80px;
   }
 }

@@ -1,18 +1,21 @@
+@use "mixins";
+@use "variables";
+
 /**************** blog part css start ****************/
 .blog_part {
-  @media #{$small_mobile} {
+  @media #{variables.$small_mobile} {
     padding-bottom: 50px;
   }
 
-  @media #{$large_mobile} {
+  @media #{variables.$large_mobile} {
     padding-bottom: 50px;
   }
 
-  @media #{$tab_device} {
+  @media #{variables.$tab_device} {
     padding-bottom: 50px;
   }
 
-  @media #{$medium_device} {
+  @media #{variables.$medium_device} {
     padding-bottom: 50px;
   }
 
@@ -27,19 +30,19 @@
   }
 
   .single-home-blog {
-    @media #{$small_mobile} {
+    @media #{variables.$small_mobile} {
       margin-bottom: 20px;
     }
 
-    @media #{$large_mobile} {
+    @media #{variables.$large_mobile} {
       margin-bottom: 20px;
     }
 
-    @media #{$tab_device} {
+    @media #{variables.$tab_device} {
       margin-bottom: 20px;
     }
 
-    @media #{$medium_device} {}
+    @media #{variables.$medium_device} {}
 
     .card-img-top {
       border-radius: 0px;
@@ -53,20 +56,20 @@
 
       .card-body {
         padding: 30px 0 23px;
-        background-color: $white_color;
-        @include transform_time(.5s);
+        background-color: variables.$white_color;
+        @include mixins.transform_time(.5s);
 
-        @media #{$small_mobile} {
+        @media #{variables.$small_mobile} {
           padding: 15px 10px;
         }
 
-        @media #{$large_mobile} {
+        @media #{variables.$large_mobile} {
           padding: 15px;
         }
 
-        @media #{$tab_device} {}
+        @media #{variables.$tab_device} {}
 
-        @media #{$medium_device} {
+        @media #{variables.$medium_device} {
           padding: 20px;
         }
 
@@ -77,7 +80,7 @@
 
         a {
           text-transform: capitalize;
-          @include transform_time(0.8s);
+          @include mixins.transform_time(0.8s);
         }
       }
 
@@ -92,33 +95,33 @@
           height: 10px;
           top: 5px;
           left: 0;
-          background-color: $btn_bg;
+          background-color: variables.$btn_bg;
           border-radius: 50%;
         }
       }
 
       span {
-        color: $font_4;
+        color: variables.$font_4;
         margin-bottom: 10px;
         display: inline-block;
         margin-top: 10px;
 
-        @media #{$small_mobile} {
+        @media #{variables.$small_mobile} {
           margin-bottom: 5px;
           margin-top: 5px;
         }
 
-        @media #{$large_mobile} {
+        @media #{variables.$large_mobile} {
           margin-bottom: 5px;
           margin-top: 5px;
         }
 
-        @media #{$tab_device} {
+        @media #{variables.$tab_device} {
           margin-bottom: 5px;
           margin-top: 5px;
         }
 
-        @media #{$medium_device} {
+        @media #{variables.$medium_device} {
           margin-bottom: 5px;
           margin-top: 5px;
         }
@@ -128,32 +131,32 @@
         font-weight: 600;
         line-height: 1.5;
         font-size: 19px;
-        @include transform_time(0.8s);
+        @include mixins.transform_time(0.8s);
         text-transform: capitalize;
         margin-bottom: 15px;
 
-        @media #{$small_mobile} {
+        @media #{variables.$small_mobile} {
           margin-bottom: 5px;
           font-size: 17px;
         }
 
-        @media #{$large_mobile} {
+        @media #{variables.$large_mobile} {
           margin-bottom: 10px;
           font-size: 16px;
         }
 
-        @media #{$tab_device} {
+        @media #{variables.$tab_device} {
           margin-bottom: 10px;
         }
 
-        @media #{$medium_device} {
+        @media #{variables.$medium_device} {
           margin-bottom: 10px;
           font-size: 18px;
         }
 
         &:hover {
-          @include transform_time(0.8s);
-          color: $btn_bg;
+          @include mixins.transform_time(0.8s);
+          color: variables.$btn_bg;
         }
 
       }
@@ -163,22 +166,22 @@
 
         li {
           display: inline-block;
-          color: $font_4;
+          color: variables.$font_4;
           margin-right: 39px;
 
-          @media #{$small_mobile} {
+          @media #{variables.$small_mobile} {
             margin-right: 10px;
           }
 
-          @media #{$large_mobile} {
+          @media #{variables.$large_mobile} {
             margin-right: 10px;
           }
 
-          @media #{$tab_device} {
+          @media #{variables.$tab_device} {
             margin-right: 10px;
           }
 
-          @media #{$medium_device} {
+          @media #{variables.$medium_device} {
             margin-right: 10px;
           }
 

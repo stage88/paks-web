@@ -1,3 +1,5 @@
+@use "variables";
+
 /*=================== contact banner start ====================*/
 
 .contact-info {
@@ -23,7 +25,7 @@
 
       a {
         &:hover {
-          color: $btn_bg;
+          color: variables.$btn_bg;
         }
       }
     }
@@ -97,7 +99,7 @@
   // }
 }
 
-@media #{$small_mobile} {
+@media #{variables.$small_mobile} {
   .contact-section {
     .btn_1 {
       margin-bottom: 0px !important;
@@ -106,7 +108,7 @@
   }
 }
 
-@media #{$large_mobile} {
+@media #{variables.$large_mobile} {
   .contact-section {
     .btn_1 {
       margin-bottom: 0px !important;
@@ -115,7 +117,7 @@
   }
 }
 
-@media #{$tab_device} {
+@media #{variables.$tab_device} {
   .contact-section {
     .btn_1 {
       margin-bottom: 0px !important;
@@ -124,7 +126,7 @@
   }
 }
 
-@media #{$medium_device} {
+@media #{variables.$medium_device} {
   .contact-section {
     .btn_1 {
       margin-bottom: 0px !important;

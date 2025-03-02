@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 /* Start Blog Area css
 ============================================================================================ */
 
@@ -9,13 +12,13 @@
 
 .blog_area {
   a {
-    color: $font_1 !important;
+    color: variables.$font_1 !important;
     text-decoration: none;
-    @include transform_time(.5s);
+    @include mixins.transform_time(.5s);
 
     &:hover,
     :hover {
-      color: $btn_bg;
+      color: variables.$btn_bg;
     }
   }
 }
@@ -41,7 +44,7 @@
       height: 100%;
       background: #000;
       opacity: 0;
-      @include transform_time(.5s);
+      @include mixins.transform_time(.5s);
     }
   }
 
@@ -118,7 +121,7 @@
       }
 
       i {
-        color: $border_color;
+        color: variables.$border_color;
         font-size: 13px;
         margin-right: 7px;
       }
@@ -133,7 +136,7 @@
     .thumb {
       &:after {
         opacity: .7;
-        @include transform_time(.5s);
+        @include mixins.transform_time(.5s);
       }
     }
   }
@@ -162,7 +165,7 @@
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    @include transform_time(.5s);
+    @include mixins.transform_time(.5s);
 
     .meta-bottom {
       p {
@@ -176,7 +179,7 @@
   }
 
   h4 {
-    @include transform_time(.5s);
+    @include mixins.transform_time(.5s);
     border-bottom: none;
     padding-bottom: 5px;
   }
@@ -199,7 +202,7 @@
     .single-blog-content {
       opacity: 1;
       visibility: visible;
-      @include transform_time(.5s);
+      @include mixins.transform_time(.5s);
     }
   }
 
@@ -236,7 +239,7 @@
       border-bottom: 1px solid #eeeeee;
       margin-bottom: 0px;
       padding-bottom: 20px;
-      @include transform_time(.5s);
+      @include mixins.transform_time(.5s);
 
       &:hover {
         // // color: $baseColor;
@@ -538,10 +541,10 @@
   }
 
   a {
-    color: $heading_color2;
+    color: variables.$heading_color2;
 
     &:hover {
-      color: $btn_bg !important;
+      color: variables.$btn_bg !important;
     }
   }
 
@@ -600,7 +603,7 @@
     bottom: -10px;
     left: 10px;
     display: block;
-    color: $white_color;
+    color: variables.$white_color;
     background-color: #ff7e5f;
     padding: 8px 15px;
     border-radius: 5px;
@@ -614,7 +617,7 @@
     h3 {
       font-size: 22px;
       font-weight: 600;
-      color: $white_color;
+      color: variables.$white_color;
       margin-bottom: 0;
       line-height: 1.2;
 
@@ -626,7 +629,7 @@
     p {
       font-size: 18px;
       margin-bottom: 0;
-      color: $white_color;
+      color: variables.$white_color;
 
       @media(min-width: 768px) {
         font-size: 18px;
@@ -688,7 +691,7 @@
     .input-group {
 
       button {
-        background: $white_color;
+        background: variables.$white_color;
         border-left: 0;
         border: 1px solid #f0e9ff;
         padding: 4px 15px;
@@ -729,7 +732,7 @@
     .input-group {
 
       button {
-        background: $white_color;
+        background: variables.$white_color;
         border-left: 0;
         border: 1px solid #f0e9ff;
         padding: 4px 15px;
@@ -801,7 +804,7 @@
 
           // color: $title_color;
           &:hover {
-            color: $white_color;
+            color: variables.$white_color;
           }
 
         }
@@ -836,7 +839,7 @@
           font-size: 13px;
 
           &:hover {
-            background: $btn_bg;
+            background: variables.$btn_bg;
             color: #fff !important;
             -webkit-text-fill-color: #fff;
             text-decoration: none;
@@ -1095,7 +1098,7 @@
   }
 
   .quotes {
-    background: $white_color;
+    background: variables.$white_color;
     padding: 15px 15px 15px 20px;
     border-left: 2px solid;
 
@@ -1202,7 +1205,7 @@
 
       // color: $title-color;
       &:hover {
-        color: $btn_bg;
+        color: variables.$btn_bg;
       }
     }
 
@@ -1241,14 +1244,14 @@
         background: #000;
 
         img {
-          @include transform_time(.5s);
+          @include mixins.transform_time(.5s);
         }
       }
 
       .lnr {
         margin-left: 20px;
         opacity: 0;
-        @include transform_time(.5s);
+        @include mixins.transform_time(.5s);
       }
 
       &:hover {
@@ -1276,14 +1279,14 @@
         background: #000;
 
         img {
-          @include transform_time(.5s);
+          @include mixins.transform_time(.5s);
         }
       }
 
       .lnr {
         margin-right: 20px;
         opacity: 0;
-        @include transform_time(.5s);
+        @include mixins.transform_time(.5s);
       }
 
       &:hover {

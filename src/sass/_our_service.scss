@@ -1,7 +1,10 @@
+@use "mixins";
+@use "variables";
+
 /**************** service_part css start ****************/
 .our_service {
   .section_tittle {
-    @media #{$tab} {
+    @media #{variables.$tab} {
       margin-bottom: 25px;
     }
   }
@@ -12,23 +15,23 @@
       line-height: 1.222;
       margin-bottom: 20px;
 
-      @media #{$small_mobile} {
+      @media #{variables.$small_mobile} {
         margin-top: 0px;
         font-size: 25px;
         margin-bottom: 15px;
       }
 
-      @media #{$large_mobile} {
+      @media #{variables.$large_mobile} {
         margin-top: 0px;
         font-size: 30px;
         margin-bottom: 15px;
       }
 
-      @media #{$tab_device} {
+      @media #{variables.$tab_device} {
         font-size: 30px;
       }
 
-      @media #{$medium_device} {
+      @media #{variables.$medium_device} {
         margin-top: 0px;
         font-size: 35px;
       }
@@ -43,7 +46,7 @@
     padding: 46px 20px 60px;
     border: 1px solid #e8e9eb;
     text-align: center;
-    @include transform_time(.6s);
+    @include mixins.transform_time(.6s);
     margin-top: 25px;
     min-height: 25rem;
 
@@ -52,12 +55,12 @@
       border: 1px solid transparent;
     }
 
-    @media #{$tab} {
+    @media #{variables.$tab} {
       padding: 25px 10px 35px;
       margin-top: 25px;
     }
 
-    @media #{$medium_device} {
+    @media #{variables.$medium_device} {
       margin-top: 25px;
 
     }
@@ -67,7 +70,7 @@
       font-size: 50px;
       margin-bottom: 15px;
       display: inline-block;
-      color: $btn_bg;
+      color: variables.$btn_bg;
     }
 
     h4 {
@@ -75,23 +78,23 @@
       font-size: 24px;
       margin-bottom: 30px;
 
-      @media #{$small_mobile} {
+      @media #{variables.$small_mobile} {
         margin-bottom: 15px;
       }
 
-      @media #{$large_mobile} {
+      @media #{variables.$large_mobile} {
         margin-bottom: 15px;
       }
 
-      @media #{$tab_device} {
+      @media #{variables.$tab_device} {
         margin-bottom: 15px;
       }
 
-      @media #{$medium_device} {}
+      @media #{variables.$medium_device} {}
     }
 
     p {
-      color: $font_3;
+      color: variables.$font_3;
       line-height: 1.8;
       font-size: 15px;
     }
@@ -100,7 +103,7 @@
   .btn_3 {
     margin-top: 38px;
 
-    @media #{$tab} {
+    @media #{variables.$tab} {
       margin-top: 15px;
     }
   }
@@ -109,19 +112,19 @@
 .single_feature_padding {
   padding-top: 140px;
 
-  @media #{$small_mobile} {
+  @media #{variables.$small_mobile} {
     padding-top: 70px;
   }
 
-  @media #{$large_mobile} {
+  @media #{variables.$large_mobile} {
     padding-top: 70px;
   }
 
-  @media #{$tab_device} {
+  @media #{variables.$tab_device} {
     padding-top: 70px;
   }
 
-  @media #{$medium_device} {
+  @media #{variables.$medium_device} {
     padding-top: 70px;
   }
 }
@@ -130,11 +133,11 @@
   .section_tittle {
     margin-bottom: 50px;
 
-    @media #{$tab} {
+    @media #{variables.$tab} {
       margin-bottom: 20px;
     }
 
-    @media #{$medium_device} {
+    @media #{variables.$medium_device} {
       margin-bottom: 20px;
     }
   }

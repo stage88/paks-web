@@ -1,5 +1,8 @@
+@use "sass:string";
+@use "variables";
+
 $default: #f9f9ff;
-$primary: $btn_bg;
+$primary: variables.$btn_bg;
 $success: #4cd3e3;
 $info: #38a4ff;
 $warning: #f4e700;
@@ -44,11 +47,11 @@ $black: #000;
 }
 
 @mixin filter($filter-type, $filter-amount) {
-  -webkit-filter: $filter-type+unquote("(#{$filter-amount})");
-  -moz-filter: $filter-type+unquote("(#{$filter-amount})");
-  -ms-filter: $filter-type+unquote("(#{$filter-amount})");
-  -o-filter: $filter-type+unquote("(#{$filter-amount})");
-  filter: $filter-type+unquote("(#{$filter-amount})");
+  -webkit-filter: $filter-type+string.unquote("(#{$filter-amount})");
+  -moz-filter: $filter-type+string.unquote("(#{$filter-amount})");
+  -ms-filter: $filter-type+string.unquote("(#{$filter-amount})");
+  -o-filter: $filter-type+string.unquote("(#{$filter-amount})");
+  filter: $filter-type+string.unquote("(#{$filter-amount})");
 }
 
 @mixin gradient($deg, $args1, $args2) {
