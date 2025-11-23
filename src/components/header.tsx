@@ -1,5 +1,7 @@
+'use client';
+
+import Link from 'next/link';
 import * as React from 'react';
-import { Link } from 'gatsby';
 
 interface Props {
   title: string;
@@ -26,7 +28,8 @@ class Header extends React.Component<Props, State> {
 
   handleScroll = () => {
     const top = window.scrollY + 1;
-    const mainMenuClass = top > 50 ? 'main_menu home_menu menu_fixed animated fadeInDown' : 'main_menu home_menu';
+    const mainMenuClass =
+      top > 50 ? 'main_menu home_menu menu_fixed animated fadeInDown' : 'main_menu home_menu';
 
     // console.log({top, mainMenuClass});
     if (this.state.mainMenuClass !== mainMenuClass) {
@@ -52,26 +55,27 @@ class Header extends React.Component<Props, State> {
           <div className='row align-items-center'>
             <div className='col-lg-12'>
               <nav className='navbar navbar-expand-lg navbar-light'>
-                <Link className='navbar-brand' to='/'>
+                <Link className='navbar-brand' href='/'>
                   <img src='/paks-images/PAKS-Logo.png' title={title} alt={title} />
                 </Link>
                 <button
                   className='navbar-toggler'
                   type='button'
-                  onClick={() => this.setState({ showMenu: this.state.showMenu === true ? false : true })}
+                  onClick={() =>
+                    this.setState({ showMenu: this.state.showMenu === true ? false : true })
+                  }
                   data-toggle='collapse'
                   data-target='#navbarSupportedContent'
                   aria-controls='navbarSupportedContent'
                   aria-expanded='false'
-                  aria-label='Toggle navigation'
-                >
+                  aria-label='Toggle navigation'>
                   <span className='ti-menu'></span>
                 </button>
 
                 <div className={navbarClass} id='navbarSupportedContent'>
                   <ul className='navbar-nav align-items-center'>
                     <li className='nav-item'>
-                      <Link className='nav-link' to='/'>
+                      <Link className='nav-link' href='/'>
                         Home
                       </Link>
                     </li>
@@ -111,7 +115,7 @@ class Header extends React.Component<Props, State> {
                   </div>
                 </li> */}
                     <li className='nav-item'>
-                      <Link className='nav-link' to='/contact'>
+                      <Link className='nav-link' href='/contact'>
                         Contact us
                       </Link>
                     </li>

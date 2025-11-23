@@ -4,7 +4,7 @@
 .about_part {
   position: relative;
   z-index: 99;
-  background-image: url(../../static/img/about_overlay.png);
+  background-image: url(/img/about_overlay.png);
   background-repeat: no-repeat;
   background-position: left;
   margin-top: 170px;
@@ -164,7 +164,7 @@
 }
 
 .experiance_part {
-  background-image: url(../../static/img/experiance_overlay.png);
+  background-image: url(/img/experiance_overlay.png);
   background-repeat: no-repeat;
   background-position: right;
 
@@ -190,7 +190,7 @@
     align-items: center;
 
     .about_text_counter {
-      background-image: url(../../static/img/heading_bg.png);
+      background-image: url(/img/heading_bg.png);
       background-size: contain;
       background-position: left;
       background-repeat: no-repeat;

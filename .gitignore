@@ -2,11 +2,10 @@
 # Node.js-Specific Ignores
 # =========================
 
-# Build directory
-public/
-
-# Gatsby cache
+# Next.js build output
 .cache/
+.next/
+bin/
 
 # Logs
 logs

@@ -69,7 +69,7 @@ const Footer = () => (
               {/* <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p> */}
               <p>
                 <span>Address:</span>{' '}
-                <a href='https://goo.gl/maps/HuuQMptcZezrV1477' target='_blank'>
+                <a href='https://goo.gl/maps/HuuQMptcZezrV1477' target='_blank' rel='noreferrer noopener'>
                   Unit 1 75 Wollongong St Fyshwick ACT 2609
                 </a>
               </p>
@@ -93,11 +93,11 @@ const Footer = () => (
                 <p className='footer-text m-0'>
                   Copyright &copy; {new Date().getFullYear()} All rights reserved <br />
                   This template is made with <i className='ti-heart' aria-hidden='true'></i> by{' '}
-                  <a href='https://colorlib.com' target='_blank'>
+                  <a href='https://colorlib.com' target='_blank' rel='noreferrer noopener'>
                     Colorlib
                   </a>{' '}
                   | Converted to GatsbyJS by{' '}
-                  <a href='https://github.com/stage88/paks-web' target='_blank'>
+                  <a href='https://github.com/stage88/paks-web' target='_blank' rel='noreferrer noopener'>
                     Sam Ilic
                   </a>
                   <br />

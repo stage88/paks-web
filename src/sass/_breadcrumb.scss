@@ -2,7 +2,7 @@
 @use "variables";
 
 .breadcrumb_bg {
-  @include mixins.background("../../static/img/breadcrumb.png");
+  @include mixins.background("/img/breadcrumb.png");
 }
 
 .breadcrumb {
