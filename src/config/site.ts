@@ -1,6 +1,7 @@
 export const siteMetadata = {
   title: 'PA & KS Contractors',
-  description:
+  description: 'PA & KS Contractors - Property Maintenance & Refurbishments Canberra',
+  longDescription:
     'PA & KS Contractors is a family owned Canberra Company managed by Paul & Kirsty Saunderson specialising in property related services. These include minor/major refurbishments, maintenance, repairs and project management services for commercial and domestic buildings throughout Canberra and surrounding areas.',
   keywords: [
     'paks',
@@ -18,6 +19,7 @@ export const siteMetadata = {
     'commercial',
   ],
   siteUrl: 'https://pakscontractors.com.au',
+  siteImage: '/paks-images/paks-fav.png',
   author: {
     name: 'Sam Ilic',
     url: 'https://github.com/stage88',

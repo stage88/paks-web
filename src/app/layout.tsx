@@ -5,6 +5,7 @@ import Header from '@/components/header'
 import { siteMetadata } from '@/config/site'
 
 import '../sass/style.scss'
+import Head from '@/components/head'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <Head />
         {vendorCss.map((href) => (
           <link key={href} rel="stylesheet" href={href} />
         ))}

@@ -96,7 +96,7 @@ const Footer = () => (
                   <a href='https://colorlib.com' target='_blank' rel='noreferrer noopener'>
                     Colorlib
                   </a>{' '}
-                  | Converted to GatsbyJS by{' '}
+                  | Converted to Next.js by{' '}
                   <a href='https://github.com/stage88/paks-web' target='_blank' rel='noreferrer noopener'>
                     Sam Ilic
                   </a>
