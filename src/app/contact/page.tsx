@@ -1,71 +1,172 @@
-'use client';
-import * as React from 'react';
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { ArrowRight, Clock, Mail, MapPin, Phone, Siren } from 'lucide-react'
 
-import BreadCrumb from '@/components/breadCrumb';
-import Page from '@/components/page';
+import { siteMetadata } from '@/config/site'
 
-const mapUrl =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.263441238843!2d149.17542021524898!3d-35.32427908027913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164c348a768bed%3A0xa50677f4168ae5fa!2s1%2F75%20Wollongong%20St%2C%20Fyshwick%20ACT%202609!5e0!3m2!1sen!2sau!4v1573129540737!5m2!1sen!2sau';
-
-class ContactUs extends React.Component<Record<string, never>> {
-  render() {
-    return (
-      <Page>
-        <BreadCrumb title='Contact' />
-        <section className='contact-section section_padding'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-12'>
-                <h3 className='text-heading'>Get in Touch</h3>
-              </div>
-              <div className='col-lg-4'>
-                <div className='media contact-info'>
-                  <span className='contact-info__icon'>
-                    <i className='ti-home'></i>
-                  </span>
-                  <div className='media-body'>
-                    <h3>Fyshwick, ACT</h3>
-                    <p>Unit 1 75 Wollongong St Fyshwick ACT 2609</p>
-                  </div>
-                </div>
-                <div className='media contact-info'>
-                  <span className='contact-info__icon'>
-                    <i className='ti-tablet'></i>
-                  </span>
-                  <div className='media-body'>
-                    <h3>Paul 0411 777 877</h3>
-                    <p>Mon to Fri 9am to 5pm</p>
-                  </div>
-                </div>
-                <div className='media contact-info'>
-                  <span className='contact-info__icon'>
-                    <i className='ti-email'></i>
-                  </span>
-                  <div className='media-body'>
-                    <h3>
-                      <a href='mailto:office@pakscontractors.com.au'>
-                        office@pakscontractors.com.au
-                      </a>
-                    </h3>
-                    <p>Send us your query anytime</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className='d-none d-sm-block mb-5 pb-4'>
-              <iframe
-                src={mapUrl}
-                width='100%'
-                height='450'
-                style={{ border: 0 }}
-                aria-label='PA & KS Contractors map'
-              />
-            </div>
-          </div>
-        </section>
-      </Page>
-    );
-  }
+export const metadata: Metadata = {
+  title: 'Contact',
+  description: `Contact PA & KS Contractors — call Paul on ${siteMetadata.phone}, email ${siteMetadata.email}, or visit us at ${siteMetadata.address.full}. Serving Canberra, Queanbeyan, Googong, Bungendore and Yass.`,
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact PA & KS Contractors',
+    description: `Talk to Paul on ${siteMetadata.phone} or email ${siteMetadata.email}. Based in Fyshwick, serving Canberra and surrounds.`,
+    url: '/contact',
+    images: [siteMetadata.ogImage],
+  },
 }
 
-export default ContactUs;
+const phoneHref = `tel:${siteMetadata.phone.replace(/\s/g, '')}`
+const mailHref = `mailto:${siteMetadata.email}?subject=Quote%20request`
+
+const quickCards = [
+  {
+    icon: Phone,
+    title: 'Call Paul',
+    primary: siteMetadata.phone,
+    secondary: 'Fastest way to get a quote',
+    href: phoneHref,
+    cta: 'Tap to call',
+  },
+  {
+    icon: Mail,
+    title: 'Email us',
+    primary: siteMetadata.email,
+    secondary: 'Send a brief, we&apos;ll reply within a business day',
+    href: mailHref,
+    cta: 'Send email',
+  },
+  {
+    icon: MapPin,
+    title: 'Visit us',
+    primary: siteMetadata.address.full,
+    secondary: 'By appointment — give us a heads-up first',
+    href: siteMetadata.address.mapUrl,
+    cta: 'Open in Maps',
+    external: true,
+  },
+]
+
+export default function ContactPage() {
+  return (
+    <>
+      <section className="relative isolate overflow-hidden bg-navy-900 pt-32 pb-16 text-white sm:pt-40 sm:pb-20 lg:pt-44">
+        <div
+          className="absolute inset-0 -z-10 bg-linear-to-br from-navy-900 via-navy-800 to-navy-700"
+          aria-hidden
+        />
+        <div
+          className="absolute -top-32 -left-32 -z-10 size-96 rounded-full bg-orange-brand/15 blur-3xl"
+          aria-hidden
+        />
+
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-white/70 transition hover:text-white"
+          >
+            <ArrowRight className="size-4 rotate-180" aria-hidden />
+            Back home
+          </Link>
+          <div className="mt-6 max-w-3xl">
+            <span className="font-display text-xs font-bold tracking-[0.2em] text-orange-soft uppercase">
+              Get in touch
+            </span>
+            <h1 className="mt-3 font-display text-4xl leading-[1.05] font-black tracking-tight text-balance sm:text-5xl lg:text-6xl">
+              Let&apos;s talk about your project.
+            </h1>
+            <p className="mt-5 text-base leading-relaxed text-white/75 sm:text-lg">
+              Whether it&apos;s a one-off repair or a full refurbishment, the quickest way to get
+              moving is to give Paul a call. We serve Canberra, Queanbeyan, Googong, Bungendore,
+              Yass and the surrounding region.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <div className="grid gap-4 sm:gap-6 lg:grid-cols-3">
+            {quickCards.map((card) => (
+              <a
+                key={card.title}
+                href={card.href}
+                target={card.external ? '_blank' : undefined}
+                rel={card.external ? 'noreferrer noopener' : undefined}
+                className="group flex flex-col rounded-3xl border border-navy-100 bg-white p-7 transition hover:-translate-y-1 hover:border-orange-brand hover:shadow-card sm:p-8"
+              >
+                <span className="inline-flex size-12 items-center justify-center rounded-2xl bg-orange-brand/10 text-orange-brand transition group-hover:bg-orange-brand group-hover:text-white">
+                  <card.icon className="size-6" aria-hidden />
+                </span>
+                <h2 className="mt-6 font-display text-xl font-bold text-navy-900">{card.title}</h2>
+                <p className="mt-2 font-display text-lg leading-snug font-semibold break-words text-navy-700">
+                  {card.primary}
+                </p>
+                <p
+                  className="mt-2 text-sm text-ink-soft"
+                  dangerouslySetInnerHTML={{ __html: card.secondary }}
+                />
+                <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-bold text-orange-brand">
+                  {card.cta}
+                  <ArrowRight className="size-4 transition group-hover:translate-x-0.5" aria-hidden />
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
+            <div className="rounded-2xl bg-navy-50 p-6">
+              <div className="flex items-center gap-2 text-orange-brand">
+                <Clock className="size-5" aria-hidden />
+                <h3 className="font-display text-sm font-bold tracking-wider uppercase">Hours</h3>
+              </div>
+              <p className="mt-3 text-base font-semibold text-navy-900">
+                {siteMetadata.hours.weekdays}
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-navy-50 p-6">
+              <div className="flex items-center gap-2 text-orange-brand">
+                <Siren className="size-5" aria-hidden />
+                <h3 className="font-display text-sm font-bold tracking-wider uppercase">
+                  Emergency
+                </h3>
+              </div>
+              <p className="mt-3 text-base font-semibold text-navy-900">
+                {siteMetadata.hours.emergency}
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-navy-50 p-6 sm:col-span-2">
+              <div className="flex items-center gap-2 text-orange-brand">
+                <MapPin className="size-5" aria-hidden />
+                <h3 className="font-display text-sm font-bold tracking-wider uppercase">
+                  Service areas
+                </h3>
+              </div>
+              <p className="mt-3 text-base font-semibold text-navy-900">
+                {siteMetadata.serviceAreas.join(' · ')}
+              </p>
+              <p className="mt-2 text-xs text-ink-soft">ABN {siteMetadata.abn}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper pb-20 sm:pb-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+          <div className="overflow-hidden rounded-3xl border border-navy-100 shadow-card">
+            <iframe
+              src={siteMetadata.address.embedUrl}
+              title="PA & KS Contractors — Fyshwick location map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="block aspect-[16/10] w-full sm:aspect-[16/7]"
+              style={{ border: 0 }}
+            />
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}

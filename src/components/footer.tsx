@@ -1,114 +1,100 @@
-import * as React from 'react';
+import { Mail, MapPin, Phone } from 'lucide-react'
 
-const Footer = () => (
-  <footer className='footer-area'>
-    <div className='container'>
-      <div className='row justify-content-center'>
-        {/* <div className='col-sm-6 col-md-4 col-xl-3'>
-          <div className='single-footer-widget footer_1'>
-            <a href='/'>
-              {' '}
-              <img src='paks-images/PAKS-Logo.png' alt='' />{' '}
-            </a>
-            <p>
-              PA & KS Contractors is a family owned Company managed by Paul & Kirsty Saunderson specialising in property related services.
-              These include minor/major refurbishments, maintenance, repairs and project management services for commercial and domestic
-              buildings throughout Canberra and surrounding areas.
+import Logo from '@/components/logo'
+import { siteMetadata } from '@/config/site'
+
+const phoneHref = `tel:${siteMetadata.phone.replace(/\s/g, '')}`
+const mailHref = `mailto:${siteMetadata.email}`
+
+export default function Footer() {
+  const year = new Date().getFullYear()
+
+  return (
+    <footer className="bg-navy-900 text-white">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-10 lg:py-24">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12">
+          <div className="lg:col-span-4">
+            <Logo className="h-12 w-auto text-yellow-400 sm:h-14" />
+            <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/70">
+              Family-owned property contractors based in Fyshwick, serving Canberra and the
+              surrounding region with refurbishments, maintenance and project management.
             </p>
           </div>
-        </div>
-        <div className='col-xl-3 col-sm-6 col-md-4'>
-          <div className='single-footer-widget footer_2'>
-            <h4>Services</h4>
-            <div className='contact_info'>
-              <ul>
-                <li>Major and minor refurbishments</li>
-                <li>Building maintenance and repairs</li>
-                <li>Commercial and domestic buildings</li>
-                <li>Construction project management</li>
-                <li>Property related services</li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
-        {/* <div className="col-xl-3 col-sm-6 col-md-4">
-          <div className="single-footer-widget footer_2">
-            <h4>Our Gallery</h4>
-            <div className="footer_img">
-              <a href="#">
-                <img src="img/footer_img/footer_1.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_2.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_3.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_4.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_5.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_6.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_7.png" alt="" />
-              </a>
-              <a href="#">
-                <img src="img/footer_img/footer_8.png" alt="" />
-              </a>
-            </div>
-          </div>
-        </div> */}
-        <div className='col-xl-12 col-sm-12 col-md-12'>
-          <div className='single-footer-widget footer_2 text-center'>
-            <h4>Contact info</h4>
-            <div className='contact_info'>
-              {/* <p>4361 Morningview Lane Artland , Street Latimer, IA 50452 / 23654</p> */}
-              <p>
-                <span>Address:</span>{' '}
-                <a href='https://goo.gl/maps/HuuQMptcZezrV1477' target='_blank' rel='noreferrer noopener'>
-                  Unit 1 75 Wollongong St Fyshwick ACT 2609
-                </a>
-              </p>
-              <p>
-                <span>Phone:</span> Paul 0411 777 877
-              </p>
-              <p>
-                <span>Email:</span> <a href='mailto:office@pakscontractors.com.au'>office@pakscontractors.com.au</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className='container-fluid'>
-      <div className='row'>
-        <div className='col-lg-12'>
-          <div className='copyright_part_text text-center'>
-            <div className='row'>
-              <div className='col-lg-12'>
-                <p className='footer-text m-0'>
-                  Copyright &copy; {new Date().getFullYear()} All rights reserved <br />
-                  This template is made with <i className='ti-heart' aria-hidden='true'></i> by{' '}
-                  <a href='https://colorlib.com' target='_blank' rel='noreferrer noopener'>
-                    Colorlib
-                  </a>{' '}
-                  | Converted to Next.js by{' '}
-                  <a href='https://github.com/stage88/paks-web' target='_blank' rel='noreferrer noopener'>
-                    Sam Ilic
-                  </a>
-                  <br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-);
 
-export default Footer;
+          <div className="lg:col-span-3">
+            <h3 className="font-display text-xs font-bold tracking-[0.2em] text-orange-soft uppercase">
+              Get in touch
+            </h3>
+            <a
+              href={phoneHref}
+              className="mt-4 flex items-start gap-3 text-white transition hover:text-orange-soft"
+            >
+              <Phone className="mt-1 size-5 shrink-0" aria-hidden />
+              <span>
+                <span className="block text-xs uppercase tracking-wider text-white/60">
+                  {siteMetadata.phoneOwner}
+                </span>
+                <span className="font-display text-xl font-bold">{siteMetadata.phone}</span>
+              </span>
+            </a>
+            <a
+              href={mailHref}
+              className="mt-5 flex items-start gap-3 text-white transition hover:text-orange-soft"
+            >
+              <Mail className="mt-1 size-5 shrink-0" aria-hidden />
+              <span className="break-all text-sm">{siteMetadata.email}</span>
+            </a>
+            <a
+              href={siteMetadata.address.mapUrl}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-5 flex items-start gap-3 text-white transition hover:text-orange-soft"
+            >
+              <MapPin className="mt-1 size-5 shrink-0" aria-hidden />
+              <span className="text-sm">{siteMetadata.address.full}</span>
+            </a>
+          </div>
+
+          <div className="lg:col-span-2">
+            <h3 className="font-display text-xs font-bold tracking-[0.2em] text-orange-soft uppercase">
+              Hours
+            </h3>
+            <p className="mt-4 text-sm text-white/80">{siteMetadata.hours.weekdays}</p>
+            <p className="mt-2 text-sm font-semibold text-white">{siteMetadata.hours.emergency}</p>
+          </div>
+
+          <div className="lg:col-span-3">
+            <h3 className="font-display text-xs font-bold tracking-[0.2em] text-orange-soft uppercase">
+              Service areas
+            </h3>
+            <ul className="mt-4 space-y-1.5 text-sm text-white/80">
+              {siteMetadata.serviceAreas.map((area) => (
+                <li key={area}>{area}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-white/50 sm:flex-row sm:px-6 lg:px-10">
+          <p>
+            {`© ${year} PA & KS Contractors. All rights reserved.`}
+            <span className="ml-2 text-white/40">ABN {siteMetadata.abn}</span>
+          </p>
+          <p>
+            Built by{' '}
+            <a
+              href="https://github.com/stage88/paks-web"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-white/70 hover:text-orange-soft"
+            >
+              Sam Ilic
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
