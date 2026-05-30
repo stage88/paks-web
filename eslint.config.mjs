@@ -2,6 +2,7 @@ import { defineConfig } from 'eslint/config'
 import { fixupConfigRules } from '@eslint/compat'
 import vitals from 'eslint-config-next/core-web-vitals'
 import typescript from 'eslint-config-next/typescript'
+import betterTailwindcss from 'eslint-plugin-better-tailwindcss'
 
 const eslintConfig = defineConfig([
   ...fixupConfigRules(vitals),
@@ -24,6 +25,20 @@ const eslintConfig = defineConfig([
         },
       ],
       '@next/next/no-img-element': 'off',
+    },
+  },
+  {
+    files: ['**/*.{ts,tsx}'],
+    plugins: { 'better-tailwindcss': betterTailwindcss },
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: 'src/app/globals.css',
+      },
+    },
+    rules: {
+      ...betterTailwindcss.configs.recommended.rules,
+      // Class wrapping is Prettier's job — keep ESLint out of line breaks.
+      'better-tailwindcss/enforce-consistent-line-wrapping': 'off',
     },
   },
 ])

@@ -39,7 +39,7 @@ export const siteMetadata = {
     embedUrl:
       'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.263441238843!2d149.17542021524898!3d-35.32427908027913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164c348a768bed%3A0xa50677f4168ae5fa!2s1%2F75%20Wollongong%20St%2C%20Fyshwick%20ACT%202609!5e0!3m2!1sen!2sau!4v1573129540737!5m2!1sen!2sau',
     lat: -35.324279,
-    lng: 149.175420,
+    lng: 149.17542,
   },
   hours: {
     weekdays: 'Mon - Fri, 9am - 5pm',
@@ -58,4 +58,4 @@ export const siteMetadata = {
     url: 'https://github.com/stage88',
     email: 'stage88@gmail.com',
   },
-}
+};

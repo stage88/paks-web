@@ -1,4 +1,4 @@
-import { siteMetadata } from '@/config/site'
+import { siteMetadata } from '@/config/site';
 
 export default function JsonLd() {
   const data = {
@@ -33,7 +33,7 @@ export default function JsonLd() {
         closes: '17:00',
       },
     ],
-    areaServed: siteMetadata.serviceAreas.map((area) => ({
+    areaServed: siteMetadata.serviceAreas.map(area => ({
       '@type': 'Place',
       name: area,
     })),
@@ -56,12 +56,9 @@ export default function JsonLd() {
       'retail centres',
       'government works',
     ],
-  }
+  };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  )
+    <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+  );
 }

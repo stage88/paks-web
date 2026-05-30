@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 
-import CtaBand from '@/components/cta-band'
-import Hero from '@/components/hero'
-import Services from '@/components/services'
-import WhyUs from '@/components/why-us'
-import { siteMetadata } from '@/config/site'
+import CtaBand from '@/components/cta-band';
+import Hero from '@/components/hero';
+import Services from '@/components/services';
+import WhyUs from '@/components/why-us';
+import { siteMetadata } from '@/config/site';
 
 export const metadata: Metadata = {
   title: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   description: siteMetadata.description,
   alternates: { canonical: '/' },
-}
+};
 
 export default function HomePage() {
   return (
@@ -22,5 +22,5 @@ export default function HomePage() {
       <WhyUs />
       <CtaBand />
     </>
-  )
+  );
 }
